@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>飞机大战</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/Spirit.js"></script>
+		<script type="text/javascript" src="js/Bullet.js"></script>
+		<script type="text/javascript" src="js/Player.js"></script>
+		<script type="text/javascript" src="js/Enemy.js"></script>
+		<script type="text/javascript" src="js/GameDirector.js"></script>
+		
+		<script>
+			
+			onload = function(){
+				
+				var liArr = document.getElementsByTagName('li');
+				for(var i = 0;i < liArr.length;i++){
+					
+					//闭包
+					liArr[i].onclick = function(number){
+						
+						return function(){
+							
+							//创建一个导演对象
+							var director = new GameDirector(number);
+							//开始游戏
+							director.startGame();
+							
+						}
+						
+					}(i + 1)
+					
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div class="containner">
+			<ul id="list">
+				<li>新手难度</li>
+				<li>业余难度</li>
+				<li>专家难度</li>
+				<li>深渊难度</li>
+			</ul>
+			<div id="score"></div>
+		</div>
+	</body>
+</html>

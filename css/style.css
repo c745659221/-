@@ -1,0 +1,107 @@
+body,html{
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	text-align: center;
+	font-family: "微软雅黑";
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#list{
+	width: 200px;
+	margin: 100px auto 0;
+	
+}
+
+#list li{
+	height: 80px;
+	font-size: 30px;
+	line-height: 80px;
+	background: red;
+	margin-top: 30px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.containner{
+	width: 480px;
+	background: url(../img/bg.jpg) repeat-y;
+	margin: 0 auto;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.logo{
+	margin-top: 100px;
+}
+
+.player{
+	width: 98px;
+	height: 122px;
+	background: url(../img/me.png);
+	position: absolute;
+	left: 191px;
+	bottom: 0;
+}
+
+.bullet{
+	width: 7px;
+	height: 18px;
+	background: url(../img/bullet.png);
+	position: absolute;
+	
+}
+
+.bullet_die{
+	width: 40px;
+	height: 40px;
+	background: url(../img/die1.png);
+	position: absolute;
+}
+
+.plane1{
+	width: 59px;
+	height: 36px;
+	background: url(../img/plane1.png);
+	position: absolute;
+	top:-36px;
+	
+}
+
+.plane2{
+	width: 70px;
+	height: 92px;
+	background: url(../img/plane2.png);
+	position: absolute;
+	top:-92px;
+	
+}
+
+.plane3{
+	width: 165px;
+	height: 256px;
+	background: url(../img/plane3.png);
+	position: absolute;
+	top:-256px;
+	
+}
+
+#score{
+	width: 100px;
+	height: 30px;
+	font-size: 30px;
+	line-height: 30px;
+	background: orange;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: none;
+}
